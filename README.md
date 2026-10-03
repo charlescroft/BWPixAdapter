@@ -1,4 +1,6 @@
 # BWPixAdapter
+> **简体中文说明见 [README.zh-CN.md](README.zh-CN.md).**
+
 
 A modern, open-source Android client for the **BW Pix / BWLED smart bulb camera**.
 It replaces the dated 10-year-old original app with a clean Material 3 / Jetpack
