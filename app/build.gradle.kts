@@ -16,7 +16,7 @@ android {
         // targetSdk=10 app works on this device).
         targetSdk = 22
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         ndk {
             // armeabi is the only ABI the PPPP SDK ships; force it so the
@@ -28,6 +28,8 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            // 开源发布：使用 debug 密钥签名，方便用户直接安装测试
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
 
@@ -48,6 +50,12 @@ android {
     }
     buildFeatures {
         compose = true
+    }
+
+    lint {
+        // 本应用刻意使用 targetSdk=22 以加载含 text relocations 的 32 位 PPPP 原生库，
+        // 侧载使用（非 Google Play 分发），因此禁用该 Play 商店 targetSdk 检查。
+        disable += "ExpiredTargetSdkVersion"
     }
 }
 
