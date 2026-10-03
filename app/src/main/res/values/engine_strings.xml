@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_type">3</string>
+    <string name="light_alerm_motion_alarm">移动侦测</string>
+    <string name="alerm_gpio_alarm">IO报警</string>
+    <string name="event_bell_call">门铃呼叫</string>
+    <string name="event_remove">移除事件</string>
+    <string name="event_urgent_call">紧急呼叫</string>
+    <string name="event_open_door">开门</string>
+    <string name="event_record">录像</string>
+    <string name="event_hover">徘徊报警</string>
+    <string name="event_message">消息</string>
+    <string name="event_bodytemp">体温</string>
+    <string name="event_humidity">湿度</string>
+    <string name="event_temperature">温度</string>
+    <string name="event_lowvol">低电量</string>
+    <string name="event_illegal_unlock">非法开锁</string>
+    <string name="light_event_voice">语音报警</string>
+    <string name="missed">未接</string>
+    <string-array name="WIFI_AP_PREFIX">
+        <item>IPC-AP</item>
+        <item>BWLED</item>
+    </string-array>
+</resources>
